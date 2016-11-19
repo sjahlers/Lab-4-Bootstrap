@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--My css styles-->
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+			      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span> 
+				    </button>
+				   	<a class="navbar-brand" href="#">OITNB Fan Page</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				    <ul class="nav navbar-nav">
+				        <li class="active"><a href="index.html"><span class = "glyphicon glyphicon-home"></a></li>
+				        <li><a href="episodes.html">Episodes</a></li>
+				        <li><a href="characters.html">Characters</a></li> 
+				        <li><a href="contact.html">Contact</a></li>
+				    </ul>
+				    <ul class="nav navbar-nav navbar-right">
+					    <li><a href="http://www.netflix.com"><span class="glyphicon glyphicon-film"></span> Sign Up for Netflix</a></li>
+				    </ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end of navigation bar -->
+
+		<div class = "container">
+			
+			<h2><span class="glyphicon glyphicon-pencil"></span>Send Us a Note</h2>
+
+			<!-- Using push/pull to make form appear above pic on sm screens -->
+			<div class="col-sm-10 col-md-9 col-md-push-3" id="contactform">
+					<form>
+						<div class = "form-group">
+							<label for = "name">Name:</label>
+							<input type = "text" class = "form-control" id = "name">
+						</div>
+						<div class = "form-group">
+							<label for="email">Email:</label>
+							<input type = "email" class = "form-control" id = "email">
+						</div>
+						<div class = "form=control">
+							<label for = "message">Message:</label>
+							<textarea class = "form-control" rows="10" id = "message"></textarea>
+						</div>
+							</br>
+							<input type="submit" class="btn btn-info" value="Send">
+						</div>
+					</form>
+			</br>
+			<div class="row">
+				<div class="col-sm-2 col-md-3 col-md-pull-9">
+					<img src="images/letter.jpg" alt = "Piper holding a letter" class="img-rounded img-responsive">
+				</div>
+			</div>
+			
+		</div>
+	</body>
+
+</html>
